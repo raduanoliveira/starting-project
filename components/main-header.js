@@ -1,3 +1,4 @@
+import NavLink from "./nav-link";
 import Link from "next/link";
 
 export default function MainHeader() {
@@ -10,7 +11,8 @@ export default function MainHeader() {
             </div>
             <nav>
                 <ul>
-                    <li><Link href='/news'>News</Link></li>
+                    <li><NavLink label='News' pathName='/news'/></li>
+                    <li><NavLink label='Archive' pathName='/archive'/></li>
                 </ul>
             </nav>
         </header>
